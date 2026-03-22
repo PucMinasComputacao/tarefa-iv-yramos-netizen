@@ -92,6 +92,16 @@ body {
     width: 300px;
 }
 
+.formulario {
+    padding: 20px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .footer {
     background: #111;
     color: white;
