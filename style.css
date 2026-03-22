@@ -34,6 +34,15 @@ body {
     text-decoration: none;
 }
 
+.banner {
+    background: url('https://aerotur.com.br/wp-content/uploads/japao.jpg') no-repeat center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+
 .footer {
     background: #111;
     color: white;
