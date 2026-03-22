@@ -3,14 +3,17 @@ body {
     font-family: Arial;
 }
 
+/* HEADER */
 .header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    background: #111;
+    color: white;
+    padding: 15px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
 }
 
 .logo {
@@ -21,12 +24,15 @@ body {
 
 .logo img {
     width: 40px;
+    height: 40px;
 }
 
 .menu ul {
     display: flex;
     list-style: none;
     gap: 40px;
+    margin: 0;
+    padding: 0;
 }
 
 .menu a {
@@ -34,22 +40,26 @@ body {
     text-decoration: none;
 }
 
+/* BANNER */
 .banner {
     background: url('https://aerotur.com.br/wp-content/uploads/japao.jpg') no-repeat center;
     background-size: cover;
     color: white;
     text-align: center;
+    font-size: 20px;
     padding: 120px 20px;
 }
 
+/* CARDS */
 .lugares {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
 }
 
 .lugar {
-    width: 30%;
+    width: 300px;
     border: 1px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
@@ -63,16 +73,17 @@ body {
     object-fit: cover;
 }
 
-.lugar:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
-}
-
 .lugar h3,
 .lugar p {
     padding: 0 10px;
 }
 
+.lugar:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* SOBRE */
 .sobre {
     background: #b22222;
     color: white;
@@ -80,18 +91,40 @@ body {
 }
 
 .sobre-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 }
 
 .sobre-texto {
-    width: 50%;
+    width: 55%;
+}
+
+.sobre-texto h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.sobre-texto p {
+    line-height: 1.6;
+}
+
+.sobre-imagem {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .sobre-imagem img {
-    width: 300px;
+    width: 100%;
+    max-width: 350px;
+    opacity: 0.85;
 }
 
+/* FORMULÁRIO */
 .formulario {
     padding: 20px;
 }
@@ -102,6 +135,16 @@ body {
     gap: 10px;
 }
 
+.formulario input {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.formulario button {
+    padding: 10px;
+}
+
+/* FOOTER */
 .footer {
     background: #111;
     color: white;
